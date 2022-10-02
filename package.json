@@ -1,0 +1,26 @@
+{
+  "name": "react-utils",
+  "version": "1.0.0",
+  "description": "Basic components and tools for React apps",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aimenhamed/react-utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aimenhamed/react-utils/issues"
+  },
+  "homepage": "https://github.com/aimenhamed/react-utils#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.21",
+    "typescript": "^4.8.4"
+  }
+}
