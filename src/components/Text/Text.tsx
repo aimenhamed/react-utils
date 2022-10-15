@@ -1,4 +1,4 @@
-import { useEffect, useRef, forwardRef } from "react";
+import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { TextProps } from "./types";
 
@@ -13,7 +13,7 @@ const Base = styled.p<TextProps>`
   line-height: ${(props: TextProps) => props.lineHeight || "1.25rem"};
 `;
 
-export const Text = forwardRef<HTMLElement, TextProps>(
+export const Text = React.forwardRef<HTMLElement, TextProps>(
   (
     { component = "p", children = null, autofocus = false, style, ...props },
     textRef
