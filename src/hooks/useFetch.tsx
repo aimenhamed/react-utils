@@ -8,15 +8,15 @@ type UseFetchProps = {
   options?: Options;
 };
 
-export const useFetch = ({ url, type, options }: UseFetchProps) => {
-  const [data, setData] = useState<any>(undefined);
+export const useFetch = <T,>({ url, type, options }: UseFetchProps) => {
+  const [data, setData] = useState<T | undefined>(undefined);
   const [error, setError] = useState(false);
 
   // function to fetch data
   const fetch = useCallback(async () => {
     setError(false);
     try {
-      const fetchedData = await sendRequest(url, type ?? "get", options);
+      const fetchedData = await sendRequest<T>(url, type ?? "get", options);
       setData(fetchedData);
     } catch {
       setError(true);
