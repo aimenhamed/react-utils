@@ -4,3 +4,4 @@ export * from "./components/Icon";
 export * from "./components/Dialog";
 
 export * from "./hooks";
+export * from "./helpers/request";

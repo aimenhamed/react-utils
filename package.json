@@ -1,6 +1,6 @@
 {
   "name": "aimen",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Basic components and tools for React apps",
   "main": "src/index.ts",
   "scripts": {
